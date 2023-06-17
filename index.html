@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="BMI.ico">
+</head>
+
+<body>
+    <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex Calculator</h3>
+    <h4>Refresh the page to Calculate again.</h4>
+    <h5>- <em>By Srishashank(SS)</em></h5>
+    <form class="form" id="form" onsubmit="return validateForm()">
+        <div class="row-one">
+            <input type="text" class="text-input" id="age" autocomplete="off" required />
+            <p class="text">Age</p>
+            <label class="container">
+                <input type="radio" name="radio" id="f">
+                <p class="text">Female</p>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="radio" id="m">
+                <p class="text">Male</p>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <div class="row-two">
+            <input type="text" class="text-input" id="height" autocomplete="off" required>
+            <p class="text">Height (cm)</p>
+            <input type="text" class="text-input" id="weight" autocomplete="off" required>
+            <p class="text">Weight (kg)</p>
+        </div>
+        <button type="button" id="submit">Submit</button>
+    </form>
+    
+    <script src="index.js" charset="utf-8"></script>
+    
+</body>
+</html>
